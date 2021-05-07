@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BE87D1C26455AD7004D56C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D1B26455AD7004D56C1 /* AppDelegate.swift */; };
+		5BE87D1E26455AD7004D56C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D1D26455AD7004D56C1 /* SceneDelegate.swift */; };
+		5BE87D2026455AD7004D56C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D1F26455AD7004D56C1 /* ViewController.swift */; };
+		5BE87D2326455AD7004D56C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE87D2126455AD7004D56C1 /* Main.storyboard */; };
+		5BE87D2526455ADB004D56C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE87D2426455ADB004D56C1 /* Assets.xcassets */; };
+		5BE87D2826455ADB004D56C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE87D2626455ADB004D56C1 /* LaunchScreen.storyboard */; };
+		5BE87D3326455ADB004D56C1 /* LocationTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D3226455ADB004D56C1 /* LocationTrackingTests.swift */; };
+		5BE87D3E26455ADB004D56C1 /* LocationTrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D3D26455ADB004D56C1 /* LocationTrackingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BE87D2F26455ADB004D56C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BE87D1026455AD7004D56C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BE87D1726455AD7004D56C1;
+			remoteInfo = LocationTracking;
+		};
+		5BE87D3A26455ADB004D56C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BE87D1026455AD7004D56C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BE87D1726455AD7004D56C1;
+			remoteInfo = LocationTracking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BE87D1826455AD7004D56C1 /* LocationTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE87D1B26455AD7004D56C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BE87D1D26455AD7004D56C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5BE87D1F26455AD7004D56C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BE87D2226455AD7004D56C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BE87D2426455ADB004D56C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BE87D2726455ADB004D56C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BE87D2926455ADB004D56C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE87D2E26455ADB004D56C1 /* LocationTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE87D3226455ADB004D56C1 /* LocationTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackingTests.swift; sourceTree = "<group>"; };
+		5BE87D3426455ADB004D56C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE87D3926455ADB004D56C1 /* LocationTrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE87D3D26455ADB004D56C1 /* LocationTrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackingUITests.swift; sourceTree = "<group>"; };
+		5BE87D3F26455ADB004D56C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BE87D1526455AD7004D56C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE87D2B26455ADB004D56C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE87D3626455ADB004D56C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BE87D0F26455AD7004D56C1 = {
+			isa = PBXGroup;
+			children = (
+				5BE87D1A26455AD7004D56C1 /* LocationTracking */,
+				5BE87D3126455ADB004D56C1 /* LocationTrackingTests */,
+				5BE87D3C26455ADB004D56C1 /* LocationTrackingUITests */,
+				5BE87D1926455AD7004D56C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BE87D1926455AD7004D56C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BE87D1826455AD7004D56C1 /* LocationTracking.app */,
+				5BE87D2E26455ADB004D56C1 /* LocationTrackingTests.xctest */,
+				5BE87D3926455ADB004D56C1 /* LocationTrackingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BE87D1A26455AD7004D56C1 /* LocationTracking */ = {
+			isa = PBXGroup;
+			children = (
+				5BE87D1B26455AD7004D56C1 /* AppDelegate.swift */,
+				5BE87D1D26455AD7004D56C1 /* SceneDelegate.swift */,
+				5BE87D1F26455AD7004D56C1 /* ViewController.swift */,
+				5BE87D2126455AD7004D56C1 /* Main.storyboard */,
+				5BE87D2426455ADB004D56C1 /* Assets.xcassets */,
+				5BE87D2626455ADB004D56C1 /* LaunchScreen.storyboard */,
+				5BE87D2926455ADB004D56C1 /* Info.plist */,
+			);
+			path = LocationTracking;
+			sourceTree = "<group>";
+		};
+		5BE87D3126455ADB004D56C1 /* LocationTrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BE87D3226455ADB004D56C1 /* LocationTrackingTests.swift */,
+				5BE87D3426455ADB004D56C1 /* Info.plist */,
+			);
+			path = LocationTrackingTests;
+			sourceTree = "<group>";
+		};
+		5BE87D3C26455ADB004D56C1 /* LocationTrackingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BE87D3D26455ADB004D56C1 /* LocationTrackingUITests.swift */,
+				5BE87D3F26455ADB004D56C1 /* Info.plist */,
+			);
+			path = LocationTrackingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BE87D1726455AD7004D56C1 /* LocationTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE87D4226455ADB004D56C1 /* Build configuration list for PBXNativeTarget "LocationTracking" */;
+			buildPhases = (
+				5BE87D1426455AD7004D56C1 /* Sources */,
+				5BE87D1526455AD7004D56C1 /* Frameworks */,
+				5BE87D1626455AD7004D56C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationTracking;
+			productName = LocationTracking;
+			productReference = 5BE87D1826455AD7004D56C1 /* LocationTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BE87D2D26455ADB004D56C1 /* LocationTrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE87D4526455ADB004D56C1 /* Build configuration list for PBXNativeTarget "LocationTrackingTests" */;
+			buildPhases = (
+				5BE87D2A26455ADB004D56C1 /* Sources */,
+				5BE87D2B26455ADB004D56C1 /* Frameworks */,
+				5BE87D2C26455ADB004D56C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BE87D3026455ADB004D56C1 /* PBXTargetDependency */,
+			);
+			name = LocationTrackingTests;
+			productName = LocationTrackingTests;
+			productReference = 5BE87D2E26455ADB004D56C1 /* LocationTrackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BE87D3826455ADB004D56C1 /* LocationTrackingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE87D4826455ADB004D56C1 /* Build configuration list for PBXNativeTarget "LocationTrackingUITests" */;
+			buildPhases = (
+				5BE87D3526455ADB004D56C1 /* Sources */,
+				5BE87D3626455ADB004D56C1 /* Frameworks */,
+				5BE87D3726455ADB004D56C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BE87D3B26455ADB004D56C1 /* PBXTargetDependency */,
+			);
+			name = LocationTrackingUITests;
+			productName = LocationTrackingUITests;
+			productReference = 5BE87D3926455ADB004D56C1 /* LocationTrackingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BE87D1026455AD7004D56C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5BE87D1726455AD7004D56C1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5BE87D2D26455ADB004D56C1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5BE87D1726455AD7004D56C1;
+					};
+					5BE87D3826455ADB004D56C1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5BE87D1726455AD7004D56C1;
+					};
+				};
+			};
+			buildConfigurationList = 5BE87D1326455AD7004D56C1 /* Build configuration list for PBXProject "LocationTracking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BE87D0F26455AD7004D56C1;
+			productRefGroup = 5BE87D1926455AD7004D56C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BE87D1726455AD7004D56C1 /* LocationTracking */,
+				5BE87D2D26455ADB004D56C1 /* LocationTrackingTests */,
+				5BE87D3826455ADB004D56C1 /* LocationTrackingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BE87D1626455AD7004D56C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE87D2826455ADB004D56C1 /* LaunchScreen.storyboard in Resources */,
+				5BE87D2526455ADB004D56C1 /* Assets.xcassets in Resources */,
+				5BE87D2326455AD7004D56C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE87D2C26455ADB004D56C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE87D3726455ADB004D56C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BE87D1426455AD7004D56C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE87D2026455AD7004D56C1 /* ViewController.swift in Sources */,
+				5BE87D1C26455AD7004D56C1 /* AppDelegate.swift in Sources */,
+				5BE87D1E26455AD7004D56C1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE87D2A26455ADB004D56C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE87D3326455ADB004D56C1 /* LocationTrackingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE87D3526455ADB004D56C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE87D3E26455ADB004D56C1 /* LocationTrackingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BE87D3026455ADB004D56C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BE87D1726455AD7004D56C1 /* LocationTracking */;
+			targetProxy = 5BE87D2F26455ADB004D56C1 /* PBXContainerItemProxy */;
+		};
+		5BE87D3B26455ADB004D56C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BE87D1726455AD7004D56C1 /* LocationTracking */;
+			targetProxy = 5BE87D3A26455ADB004D56C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BE87D2126455AD7004D56C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BE87D2226455AD7004D56C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BE87D2626455ADB004D56C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BE87D2726455ADB004D56C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BE87D4026455ADB004D56C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BE87D4126455ADB004D56C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BE87D4326455ADB004D56C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V642954LL;
+				INFOPLIST_FILE = LocationTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niktarasov.LocationTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BE87D4426455ADB004D56C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V642954LL;
+				INFOPLIST_FILE = LocationTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niktarasov.LocationTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BE87D4626455ADB004D56C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V642954LL;
+				INFOPLIST_FILE = LocationTrackingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niktarasov.LocationTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationTracking.app/LocationTracking";
+			};
+			name = Debug;
+		};
+		5BE87D4726455ADB004D56C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V642954LL;
+				INFOPLIST_FILE = LocationTrackingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niktarasov.LocationTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationTracking.app/LocationTracking";
+			};
+			name = Release;
+		};
+		5BE87D4926455ADB004D56C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V642954LL;
+				INFOPLIST_FILE = LocationTrackingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niktarasov.LocationTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocationTracking;
+			};
+			name = Debug;
+		};
+		5BE87D4A26455ADB004D56C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V642954LL;
+				INFOPLIST_FILE = LocationTrackingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niktarasov.LocationTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocationTracking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BE87D1326455AD7004D56C1 /* Build configuration list for PBXProject "LocationTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE87D4026455ADB004D56C1 /* Debug */,
+				5BE87D4126455ADB004D56C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE87D4226455ADB004D56C1 /* Build configuration list for PBXNativeTarget "LocationTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE87D4326455ADB004D56C1 /* Debug */,
+				5BE87D4426455ADB004D56C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE87D4526455ADB004D56C1 /* Build configuration list for PBXNativeTarget "LocationTrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE87D4626455ADB004D56C1 /* Debug */,
+				5BE87D4726455ADB004D56C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE87D4826455ADB004D56C1 /* Build configuration list for PBXNativeTarget "LocationTrackingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE87D4926455ADB004D56C1 /* Debug */,
+				5BE87D4A26455ADB004D56C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BE87D1026455AD7004D56C1 /* Project object */;
+}
