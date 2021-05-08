@@ -7,28 +7,20 @@
 
 import UIKit
 
-extension SettingsViewController: UITextFieldDelegate {
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-
-    }
+extension SettingsViewController {
 
     func textFieldDidEndEditing(_ textField: UITextField) {
         checkConfigurationIsMissing()
     }
 
-//    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-//        return true;
-//    }
-//    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-//        return true;
-//    }
-//    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-//        return true;
-//    }
-
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         checkConfigurationIsMissing()
+
+        // limit deviceIdTextField to 20 characters
+        let text = textField.text ?? ""
+        if textField == deviceIdTextField && text.count >= 20 {
+            return false
+        }
         return true
     }
 

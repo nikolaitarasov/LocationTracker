@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		5BE87D1C26455AD7004D56C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D1B26455AD7004D56C1 /* AppDelegate.swift */; };
 		5BE87D1E26455AD7004D56C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D1D26455AD7004D56C1 /* SceneDelegate.swift */; };
-		5BE87D2026455AD7004D56C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D1F26455AD7004D56C1 /* ViewController.swift */; };
+		5BE87D2026455AD7004D56C1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D1F26455AD7004D56C1 /* SettingsViewController.swift */; };
 		5BE87D2326455AD7004D56C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE87D2126455AD7004D56C1 /* Main.storyboard */; };
 		5BE87D2526455ADB004D56C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE87D2426455ADB004D56C1 /* Assets.xcassets */; };
 		5BE87D2826455ADB004D56C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE87D2626455ADB004D56C1 /* LaunchScreen.storyboard */; };
 		5BE87D3326455ADB004D56C1 /* LocationTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D3226455ADB004D56C1 /* LocationTrackingTests.swift */; };
 		5BE87D3E26455ADB004D56C1 /* LocationTrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D3D26455ADB004D56C1 /* LocationTrackingUITests.swift */; };
+		5BE87D552645886C004D56C1 /* SettingsTextFieldsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D542645886C004D56C1 /* SettingsTextFieldsHelper.swift */; };
+		5BE87D662645DE01004D56C1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D652645DE01004D56C1 /* LocationManager.swift */; };
+		5BE87D7B2646A33A004D56C1 /* GIFImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D7A2646A339004D56C1 /* GIFImageHelper.swift */; };
+		5BE87D802646A3D8004D56C1 /* location-update.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5BE87D7F2646A3D7004D56C1 /* location-update.gif */; };
+		5BE87D9C2646D7C0004D56C1 /* LocationDataSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87D9B2646D7C0004D56C1 /* LocationDataSender.swift */; };
+		5BE87DA22646D8F4004D56C1 /* UserLocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87DA12646D8F4004D56C1 /* UserLocationData.swift */; };
+		5BE87DAA2646DB4E004D56C1 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87DA92646DB4E004D56C1 /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,7 @@
 		5BE87D1826455AD7004D56C1 /* LocationTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE87D1B26455AD7004D56C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE87D1D26455AD7004D56C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5BE87D1F26455AD7004D56C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BE87D1F26455AD7004D56C1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5BE87D2226455AD7004D56C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BE87D2426455ADB004D56C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE87D2726455ADB004D56C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		5BE87D3926455ADB004D56C1 /* LocationTrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE87D3D26455ADB004D56C1 /* LocationTrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackingUITests.swift; sourceTree = "<group>"; };
 		5BE87D3F26455ADB004D56C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE87D542645886C004D56C1 /* SettingsTextFieldsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTextFieldsHelper.swift; sourceTree = "<group>"; };
+		5BE87D652645DE01004D56C1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5BE87D7A2646A339004D56C1 /* GIFImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImageHelper.swift; sourceTree = "<group>"; };
+		5BE87D7F2646A3D7004D56C1 /* location-update.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "location-update.gif"; sourceTree = "<group>"; };
+		5BE87D9B2646D7C0004D56C1 /* LocationDataSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataSender.swift; sourceTree = "<group>"; };
+		5BE87DA12646D8F4004D56C1 /* UserLocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationData.swift; sourceTree = "<group>"; };
+		5BE87DA92646DB4E004D56C1 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +115,16 @@
 			children = (
 				5BE87D1B26455AD7004D56C1 /* AppDelegate.swift */,
 				5BE87D1D26455AD7004D56C1 /* SceneDelegate.swift */,
-				5BE87D1F26455AD7004D56C1 /* ViewController.swift */,
+				5BE87D1F26455AD7004D56C1 /* SettingsViewController.swift */,
+				5BE87DA02646D8D2004D56C1 /* Models */,
+				5BE87D8E2646C904004D56C1 /* Workers */,
+				5BE87D6D2645DE0A004D56C1 /* Helpers */,
+				5BE87D872646AAED004D56C1 /* Resources */,
 				5BE87D2126455AD7004D56C1 /* Main.storyboard */,
 				5BE87D2426455ADB004D56C1 /* Assets.xcassets */,
 				5BE87D2626455ADB004D56C1 /* LaunchScreen.storyboard */,
 				5BE87D2926455ADB004D56C1 /* Info.plist */,
+				5BE87DA92646DB4E004D56C1 /* Keys.swift */,
 			);
 			path = LocationTracking;
 			sourceTree = "<group>";
@@ -126,6 +145,40 @@
 				5BE87D3F26455ADB004D56C1 /* Info.plist */,
 			);
 			path = LocationTrackingUITests;
+			sourceTree = "<group>";
+		};
+		5BE87D6D2645DE0A004D56C1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5BE87D542645886C004D56C1 /* SettingsTextFieldsHelper.swift */,
+				5BE87D7A2646A339004D56C1 /* GIFImageHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5BE87D872646AAED004D56C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BE87D7F2646A3D7004D56C1 /* location-update.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5BE87D8E2646C904004D56C1 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				5BE87D652645DE01004D56C1 /* LocationManager.swift */,
+				5BE87D9B2646D7C0004D56C1 /* LocationDataSender.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		5BE87DA02646D8D2004D56C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BE87DA12646D8F4004D56C1 /* UserLocationData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE87D802646A3D8004D56C1 /* location-update.gif in Resources */,
 				5BE87D2826455ADB004D56C1 /* LaunchScreen.storyboard in Resources */,
 				5BE87D2526455ADB004D56C1 /* Assets.xcassets in Resources */,
 				5BE87D2326455AD7004D56C1 /* Main.storyboard in Resources */,
@@ -258,9 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BE87D2026455AD7004D56C1 /* ViewController.swift in Sources */,
+				5BE87D7B2646A33A004D56C1 /* GIFImageHelper.swift in Sources */,
+				5BE87D2026455AD7004D56C1 /* SettingsViewController.swift in Sources */,
+				5BE87D662645DE01004D56C1 /* LocationManager.swift in Sources */,
 				5BE87D1C26455AD7004D56C1 /* AppDelegate.swift in Sources */,
+				5BE87D552645886C004D56C1 /* SettingsTextFieldsHelper.swift in Sources */,
+				5BE87DA22646D8F4004D56C1 /* UserLocationData.swift in Sources */,
 				5BE87D1E26455AD7004D56C1 /* SceneDelegate.swift in Sources */,
+				5BE87D9C2646D7C0004D56C1 /* LocationDataSender.swift in Sources */,
+				5BE87DAA2646DB4E004D56C1 /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +499,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6V642954LL;
 				INFOPLIST_FILE = LocationTracking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6V642954LL;
 				INFOPLIST_FILE = LocationTracking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

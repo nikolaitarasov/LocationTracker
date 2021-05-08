@@ -14,12 +14,18 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     static let shared = LocationManager()
     private var locationManager: CLLocationManager = CLLocationManager()
     private var requestLocationAuthorizationCallback: ((CLAuthorizationStatus) -> Void)?
+    var locationAuthorizationUpdatedToAlwaysCallback: (() -> Void)?
+    let locationDataSender = LocationDataSender()
 
-    func requestLocationAuthorization() {
+    override init() {
+        super.init()
+
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.distanceFilter = kCLDistanceFilterNone
+    }
 
+    func requestLocationAuthorization() {
         if #available(iOS 13.4, *) {
             self.requestLocationAuthorizationCallback = { status in
                 if status == .authorizedWhenInUse {
@@ -53,15 +59,20 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
             manager.stopMonitoringSignificantLocationChanges()
             manager.stopUpdatingLocation()
         } else if status == .authorizedAlways {
-            showLocationTrackingAnimation()
+            self.locationAuthorizationUpdatedToAlwaysCallback?()
         }
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-            let latitude = location.coordinate.latitude
-            let longitude = location.coordinate.longitude
+            let latitude = Float(location.coordinate.latitude)
+            let longitude = Float(location.coordinate.longitude)
             print("lat: \(latitude)\nlon: \(longitude)")
+            let userDefaults = UserDefaults.standard
+            let endpoint = userDefaults.string(forKey: Keys.endpointId) ?? "unknown"
+            let deviceIdStr = userDefaults.string(forKey: Keys.deviceId) ?? "unknown"
+            let userLocation = UserLocationData(latitude, longitude, deviceIdStr)
+            locationDataSender.send(to: endpoint, userLocation: userLocation)
         }
     }
 }

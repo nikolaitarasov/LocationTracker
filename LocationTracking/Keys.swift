@@ -1,8 +1,11 @@
 //
-//  Constants.swift
+//  Keys.swift
 //  LocationTracking
 //
 //  Created by Mykola Tarasov on 5/8/21.
 //
 
-import Foundation
+struct Keys {
+    static let endpointId = "endpoint"
+    static let deviceId = "deviceId"
+}
