@@ -108,8 +108,10 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         let userDefaults = UserDefaults.standard
         userDefaults.set(endpointTextField.text, forKey: Keys.endpointId)
         userDefaults.set(deviceIdTextField.text, forKey: Keys.deviceId)
-        // show "Saved!" toast
-        showToast(message: "Saved")
+
+        if let button = sender as? UIButton {
+            springSaveButton(button: button)
+        }
     }
     
     // Private functions
@@ -142,9 +144,25 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         self.view.addSubview(toastLabel)
         UIView.animate(withDuration: 1.5, delay: 0.1, options: .curveEaseIn, animations: {
              toastLabel.alpha = 0.0
-        }, completion: { _ in
-            toastLabel.removeFromSuperview()
+        }, completion: { success in
+            if success {
+                toastLabel.removeFromSuperview()
+            }
         })
+    }
+
+    private func springSaveButton(button: UIButton) {
+        let bounds = button.bounds
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: .curveEaseOut) {
+            button.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 50, height: bounds.size.height)
+        } completion: { success in
+            if success {
+                //UIView.animate(withDuration: 0.2) {
+                    button.bounds = bounds
+                //}
+            }
+        }
+
     }
 
     private func displayOkAlert(title: String? = nil, message: String) {
